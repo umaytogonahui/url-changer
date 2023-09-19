@@ -1,7 +1,15 @@
 package main
 
+import (
+	"fmt"
+
+	"chamger.org/firsttry/internal/config"
+)
+
 func main() {
-	//TO DO: init config: cleanenv
+	cfg := config.MustLoad()
+
+	fmt.Println(cfg)
 
 	//TO DO: init logger: slog
 
