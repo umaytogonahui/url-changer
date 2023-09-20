@@ -18,10 +18,8 @@ func main() {
 
 	log := setupLogger(cfg.Env)
 
-	log.Info("Starting")
+	log.Info("Starting url-changer", slog.String("env", cfg.Env))
 	log.Debug("debug messages are enabled")
-
-	//TO DO: init logger: slog
 
 	//TO DO: init storage: sqlite
 
